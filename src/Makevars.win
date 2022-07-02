@@ -1,0 +1,7 @@
+PKG_LIBS = $(shell "${R_HOME}/bin${R_ARCH_BIN}/Rscript.exe" -e "Rcpp:::LdFlags()") $(SHLIB_OPENMP_CXXFLAGS) $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+PREFIX =.
+INCLUDE_DNN_R = -I$(PREFIX)
+OBJECTS_DNN_R = $(PREFIX)/interface.o $(PREFIX)/dataset.o $(PREFIX)/DNN/utils.o $(PREFIX)/DNN/struct.o $(PREFIX)/DNN/export.o $(PREFIX)/DNN/report.o $(PREFIX)/DNN/level2.o $(PREFIX)/DNN/level3.o
+PKG_CPPFLAGS = $(INCLUDE_DNN_R) $(shell "${R_HOME}/bin${R_ARCH_BIN}/Rscript.exe" -e "Rcpp:::CxxFlags()") 
+OBJECTS = $(OBJECTS_DNN_R)
+PKG_CXXFLAGS = -DR_SHAREDLIB -DDNN_DOUBLE_ONLY $(SHLIB_OPENMP_CXXFLAGS)
