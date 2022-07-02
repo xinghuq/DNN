@@ -18,7 +18,7 @@ Welcome any [feedback](https://github.com/xinghuq/DNN/issues) and [pull request]
 
 ## Install the developement version from github
 
-#devtools::install_github("xinghuq/DNN")
+devtools::install_github("xinghuq/DNN")
 
 library("DNN")
 
