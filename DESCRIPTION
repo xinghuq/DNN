@@ -1,6 +1,6 @@
 Package: DNN
 Type: Package
-Title: A Fast Neural Network Tool for Big Data Analysis
+Title: A Fast Neural Network Tool for Big Data Analysis 
 Version: 1.2.1
 Date: 2022-06-28
 Description: A fast implementation of deep learning for various big data analysis. 
@@ -8,8 +8,8 @@ Description: A fast implementation of deep learning for various big data analysi
       to other Omics data analysis, such as single cell Omics. This package adopted optimized algorithms such as backpropagation, Rprop, 
       simulated annealing, stochastic gradient and pruning algorithms such as minimum magnitude, Optimal Brain Surgeon 
       based on a fast implementation of compressed neural networks (Grzegorz Klima, 2016). 
-Authors@R: c(person("Xinghu", "Qin", role=c("aut", "cre", "cph"), email="qinxinghu@gmail.com", comment=c(ORCID="0000-0003-2351-3610")))
-Maintainer: Xinghu Qin <qinxinghu@gmail.com>
+Authors@R: c(person("Xinghu", "Qin", role=c("aut", "cre", "cph"), email="qinxinghu@gmail.com", comment=c(ORCID="0000-0003-2351-3610")),person("Peilin", "Jia", role=c("aut"), email="pjia@big.ac.cn"))
+Maintainer:Xinghu Qin <qinxinghu@gmail.com>
 biocViews:
 Depends: R (>= 3.0)
 License: GPL-3
@@ -17,8 +17,8 @@ URL: https://github.com/xinghuq/DNN
 BugReports: https://github.com/xinghuq/DNN/issues
 Imports: Rcpp, methods, stats,graphics,SNPRelate
 VignetteBuilder: knitr
-NeedsCompilation: yes
+NeedsCompilation: no
 RoxygenNote: 6.1.1
 Suggests: knitr,testthat,rmarkdown
-Packaged: 2022-07-02 12:03:04 UTC; Qin_st_andrews
-Author: Xinghu Qin [aut, cre, cph] (<https://orcid.org/0000-0003-2351-3610>)
+
+
