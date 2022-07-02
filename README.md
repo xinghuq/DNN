@@ -26,5 +26,5 @@ library("DNN")
 
 ## Citation
 
-Qin. X, 2022. A Fast Neural Network Tool for Big Data Analysis. R package version 1.2.1.
+Qin. X, Jia. P. 2022. A Fast Neural Network Tool for Big Data Analysis. R package version 1.2.1.
 
